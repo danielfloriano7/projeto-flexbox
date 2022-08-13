@@ -248,7 +248,7 @@ footer .footer{
 
 /* mobile */
 
-@media(max-width: 992px){
+@media(max-width: 990px){
     .flex-container{
         flex-direction: column;
     }
@@ -259,11 +259,17 @@ footer .footer{
 
     .apresentacao .texto-apresentacao{
         width: 100%;
-        
+        padding-left: 10px;
     }
 
+    .apresentacao img {
+        max-width: 600px ;
+    } 
+
     #quem-somos{
+        padding-top: 22px;
         flex-direction: column-reverse;
+        padding-left: 10px;
     }
 
     #quem-somos img{
@@ -271,12 +277,30 @@ footer .footer{
         margin: auto;
     }    
 
+    #servicos {
+        margin-top: 50px;
+        padding: 35px 0;
+    }
+
+    #servicos h2 {
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
     .list-servicos{
         flex-direction: column;
+        justify-content: space-between;
+        min-height: 870px;
+        max-height: 1000px;
+    }
+
+    .item-servicos {
+        margin: 10px;
     }
 
     .item-servicos img{
         width: 50%;
+        max-width: 210px;
         margin: auto;
     }
 
@@ -291,5 +315,10 @@ footer .footer{
         margin:auto;
         width: 100%;
         margin-bottom: 20px;
+    }
+
+    #planos h2 {
+        text-align: center;
+        padding-bottom: 15px;
     }
 }
